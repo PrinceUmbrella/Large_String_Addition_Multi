@@ -336,6 +336,7 @@ string InsertChar(string smallestNum, int countt, bool inFront, char character)
     {
         numberOfChars += character;
     }
+    
     if(inFront)
     {
         smallestNum = numberOfChars + smallestNum;
@@ -390,7 +391,14 @@ string  addition(string firstNumber, string secondNumber)
         sumOfNumbers = sumOfNumbers % BASE;
 
         pass = sumOfNumbers + '0';
+        // cout << "From Large " << largestNum << endl;
+        // cout << "From Small " << smallestNum << endl;
+        // cout << "Sum of Numbers " << sumOfNumbers << endl;
+        // cout << "Carry " << carry << endl;        
+        // cout << "Pass " << pass << endl;
+
         finalSum  = pass + finalSum;
+        // cout << "Final Sum " << finalSum << endl;
         prevCarry = carry;
 
     }
